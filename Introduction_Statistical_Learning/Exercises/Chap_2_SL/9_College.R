@@ -14,5 +14,11 @@ print(summary(college))
 pairs(college[,2:10]) #get glimpse into data attempt
 
 Private=as.factor(Private) # change Private to qualitative
-plot(Private, Outstate, xlab="Private", ylab="Out-of-state")    # plot 
+plot(Private, Outstate, xlab="Private", ylab="Out-of-state")    # plot graph
+
+Elite =rep("No",nrow(college)) # creates "No" Novector with length nrow(college)
+Elite[Top10perc>50]="Yes"
+Elite=as.factor(Elite)
+college =data.frame(college,Elite)
+
 
