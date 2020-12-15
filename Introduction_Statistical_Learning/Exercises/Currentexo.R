@@ -11,7 +11,7 @@ attach(college)
 cat("Summary of data: \n")
 print(summary(college))
 
-pairs(college[,2:10]) #get glimpse into data
+pairs(college[,2:10]) #get glimpse into data attempt
 
 Private=as.factor(Private) # change Private to qualitative
 plot(Private, Outstate, xlab="Private", ylab="Out-of-state")    # plot 
