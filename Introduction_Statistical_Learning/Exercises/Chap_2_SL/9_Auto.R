@@ -23,4 +23,6 @@ cat("The standard deviation of weight; ", sd(auto$weight),"\n")
 
 pairs(auto[,1:7])
 
+detach(auto)
+
 
