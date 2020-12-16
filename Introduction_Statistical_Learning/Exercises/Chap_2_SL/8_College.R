@@ -31,3 +31,4 @@ hist(S.F.Ratio)
 Grad.Rate[Grad.Rate>100]=100
 hist(Grad.Rate)
 
+detach(college)
